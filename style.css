@@ -1,0 +1,70 @@
+@font-face {
+    font-family: FuturaBk;
+    src: url("util/Futura\ Bk\ BT\ Book.ttf");
+}
+
+header{
+    text-align: center;
+}
+
+#titulo-cabecalho{
+    text-align: center;
+    font-family: FuturaBk;
+    color: white;
+    font-size: rem;
+}
+
+#navegacao-cabecalho{
+
+    text-align: right;
+}
+
+table {
+    width: 100%;
+}
+
+header {
+    background-color: #7957f2;
+    border-radius: 10px;    
+    margin-bottom: 2rem;
+}
+
+img{
+    width: 20rem;
+    text-align: center;
+}
+
+a {
+    margin: 2px;
+}
+
+span{
+    
+    font-size: 5rem;
+}
+
+.container-noticias {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 2rem 0rem;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:20rem;
+    width:15rem;
+    padding: 1rem;
+    
+    justify-self: center;
+}
+
+.noticia > h1 {
+    color: beige;
+
+}
+
