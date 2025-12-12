@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayZone - Blog de Videogames</title>
+  <!-- Link para o CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Link para o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home" class="carousel-section">
+        <div class="container">
+          <h2 class="section-title">Destaques</h2>
+          <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x500/611DF2/ffffff?text=Novo+RPG+Revolucionario" class="d-block w-100" alt="Notícia 1">
+                <div class="carousel-caption">
+                  <span class="badge bg-warning mb-2">🔥 DESTAQUE</span>
+                  <h3>Novo RPG promete revolucionar o gênero</h3>
+                  <p>Desenvolvedora anuncia título ambicioso com mecânicas inovadoras e gráficos de última geração.</p>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x500/4E7CD9/ffffff?text=Atualizacao+Massiva" class="d-block w-100" alt="Notícia 2">
+                <div class="carousel-caption">
+                  <span class="badge bg-info mb-2">📢 ATUALIZAÇÃO</span>
+                  <h3>Grande atualização traz novo modo multiplayer</h3>
+                  <p>Patch 2.0 adiciona conteúdo esperado pelos fãs e corrige problemas técnicos do lançamento.</p>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x500/35F2DF/000000?text=Campeonato+Mundial" class="d-block w-100" alt="Notícia 3">
+                <div class="carousel-caption">
+                  <span class="badge bg-success mb-2">🏆 E-SPORTS</span>
+                  <h3>Campeonato mundial define os melhores times</h3>
+                  <p>Final épica reúne milhões de espectadores e premia equipes com valores recordes.</p>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- ========== CONTEÚDO PRINCIPAL COM SIDEBAR ========== -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            
+            <!-- COLUNA PRINCIPAL (Posts dos Leitores) -->
+            <div class="col-lg-8">
+              <h2 class="section-title" id="posts">Posts em Alta 🔥</h2>
+              
+              <!-- Post 1 -->
+              <div class="post-card">
+                <div class="post-author">
+                  <div class="post-avatar">JM</div>
+                  <div class="post-author-info">
+                    <h6>João Martins</h6>
+                    <small><i class="bi bi-clock"></i> 2 horas atrás</small>
+                  </div>
+                </div>
+                <div class="post-tags">
+                  <span class="post-tag">RPG</span>
+                  <span class="post-tag">Opinião</span>
+                </div>
+                <h4 class="post-title">Por que Elden Ring definiu uma nova era para os RPGs</h4>
+                <p class="post-excerpt">
+                  Após mais de 200 horas de jogo, posso afirmar com segurança que Elden Ring não é apenas mais um souls-like. 
+                  A FromSoftware conseguiu criar algo único que mistura a dificuldade característica da série com liberdade de exploração...
+                </p>
+                <div class="post-stats">
+                  <span><i class="bi bi-heart-fill"></i> 234 curtidas</span>
+                  <span><i class="bi bi-chat-fill"></i> 56 comentários</span>
+                  <span><i class="bi bi-eye-fill"></i> 1.2k visualizações</span>
+                </div>
+              </div>
+    
+              <!-- Post 2 -->
+              <div class="post-card">
+                <div class="post-author">
+                  <div class="post-avatar">AS</div>
+                  <div class="post-author-info">
+                    <h6>Ana Silva</h6>
+                    <small><i class="bi bi-clock"></i> 5 horas atrás</small>
+                  </div>
+                </div>
+                <div class="post-tags">
+                  <span class="post-tag">FPS</span>
+                  <span class="post-tag">E-Sports</span>
+                </div>
+                <h4 class="post-title">Como melhorei meu rank em Valorant: 5 dicas práticas</h4>
+                <p class="post-excerpt">
+                  Depois de ficar preso no Prata por meses, finalmente consegui subir para Diamante seguindo estas estratégias. 
+                  A primeira e mais importante: comunicação com o time é TUDO. Vou compartilhar o que funcionou para mim...
+                </p>
+                <div class="post-stats">
+                  <span><i class="bi bi-heart-fill"></i> 189 curtidas</span>
+                  <span><i class="bi bi-chat-fill"></i> 42 comentários</span>
+                  <span><i class="bi bi-eye-fill"></i> 890 visualizações</span>
+                </div>
+              </div>
+    
+              <!-- Post 3 -->
+              <div class="post-card">
+                <div class="post-author">
+                  <div class="post-avatar">PC</div>
+                  <div class="post-author-info">
+                    <h6>Pedro Costa</h6>
+                    <small><i class="bi bi-clock"></i> 1 dia atrás</small>
+                  </div>
+                </div>
+                <div class="post-tags">
+                  <span class="post-tag">Hardware</span>
+                  <span class="post-tag">Review</span>
+                </div>
+                <h4 class="post-title">Vale a pena montar um PC gamer em 2025? Minha experiência</h4>
+                <p class="post-excerpt">
+                  Gastei R$ 8.000 montando meu setup dos sonhos e vou contar se valeu a pena. Spoiler: sim, mas com ressalvas. 
+                  Vou mostrar cada componente escolhido, os desafios que enfrentei e o desempenho real nos jogos AAA...
+                </p>
+                <div class="post-stats">
+                  <span><i class="bi bi-heart-fill"></i> 312 curtidas</span>
+                  <span><i class="bi bi-chat-fill"></i> 78 comentários</span>
+                  <span><i class="bi bi-eye-fill"></i> 2.1k visualizações</span>
+                </div>
+              </div>
+    
+              <!-- Botão Ver Mais Posts -->
+              <div class="text-center mt-4">
+                <button class="btn btn-ver-mais">
+                  <i class="bi bi-plus-circle me-2"></i>Ver Todos os Posts
+                </button>
+              </div>
+            </div>
+    
+            <!-- SIDEBAR DE NOTÍCIAS -->
+            <div class="col-lg-4">
+              <div class="news-sidebar" id="noticias">
+                <h4><i class="bi bi-newspaper me-2"></i>Últimas Notícias</h4>
+                
+                <div class="news-item">
+                  <span class="news-badge bg-danger text-white">URGENTE</span>
+                  <div class="news-item-title">Sony anuncia showcase com novidades do PS5</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 30 minutos</div>
+                </div>
+    
+                <div class="news-item">
+                  <span class="news-badge bg-primary text-white">LANÇAMENTO</span>
+                  <div class="news-item-title">Novo jogo da franquia Final Fantasy ganha data</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 1 hora</div>
+                </div>
+    
+                <div class="news-item">
+                  <span class="news-badge bg-success text-white">ATUALIZAÇÃO</span>
+                  <div class="news-item-title">Fortnite recebe novo mapa e modo de jogo</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 2 horas</div>
+                </div>
+    
+                <div class="news-item">
+                  <span class="news-badge bg-warning text-dark">RUMOR</span>
+                  <div class="news-item-title">Nintendo pode anunciar sucessor do Switch em breve</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 3 horas</div>
+                </div>
+    
+                <div class="news-item">
+                  <span class="news-badge bg-info text-white">ANÁLISE</span>
+                  <div class="news-item-title">Como a IA está mudando o desenvolvimento de jogos</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 5 horas</div>
+                </div>
+    
+                <div class="news-item">
+                  <span class="news-badge bg-secondary text-white">PATCH</span>
+                  <div class="news-item-title">League of Legends: notas do patch 14.5</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 6 horas</div>
+                </div>
+    
+                <div class="news-item">
+                  <div class="news-item-title">Estúdio indie revela trailer de jogo de terror</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 8 horas</div>
+                </div>
+    
+                <div class="news-item">
+                  <div class="news-item-title">Vendas de jogos digitais superam físicos em 2024</div>
+                  <div class="news-item-date"><i class="bi bi-clock"></i> Há 10 horas</div>
+                </div>
+    
+                <div class="text-center mt-4">
+                  <a href="#" class="btn btn-outline-primary btn-sm rounded-pill">
+                    Ver todas as notícias <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+</body>
+</html>
