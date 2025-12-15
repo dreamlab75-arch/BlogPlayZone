@@ -73,36 +73,61 @@ body {
     }
     
     /* ========== CAROUSEL STYLES ========== */
-    .carousel-section {
-      background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
-      padding: 40px 0;
-    }
     .carousel-item {
       height: 500px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
     }
-    .carousel-item img {
-      height: 100%;
-      object-fit: cover;
-      border-radius: 15px;
+    
+    /* Overlay de gradiente sobre a imagem */
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(97, 29, 242, 0.85),
+        rgba(97, 29, 242, 0.15),
+        transparent 21%
+      );
+      z-index: 1;
     }
+    
+    /* Caption corrigida */
     .carousel-caption {
-      background: linear-gradient(to top, rgba(97, 29, 242, 0.95), transparent);
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 40px 20px 20px;
-      border-radius: 0 0 15px 15px;
+      position: absolute;
+      inset: auto 0 0 0; /* bottom full width */
+      padding: 40px;
+      text-align: center;
+      background: none; /* gradiente agora vem do ::before */
+      z-index: 2;
     }
+    
+    /* Texto */
     .carousel-caption h3 {
-      font-weight: bold;
-      font-size: 2rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.35);
+      text-align: center;
     }
+    
+    .carousel-caption p {
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    /* Setas */
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-color: #611DF2;
       border-radius: 50%;
-      padding: 20px;
+      padding: 18px;
     }
+    
+    
     
     /* ========== NEWS SIDEBAR ========== */
     .news-sidebar {
