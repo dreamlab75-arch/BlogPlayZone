@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts em Alta - Play Zone</title>
+  <!-- Link para o CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Link para o CSS do Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="home" class="carousel-section">
+        <div class="container">
+          <h2 class="section-title">Destaques</h2>
+          <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="background-image: url('img/2014-08-20-tw3-gameplay.webp');">
+                <div class="carousel-caption">
+                  <span class="badge bg-warning mb-2">🔥 DESTAQUE</span>
+                  <h3>Novo RPG promete revolucionar o gênero</h3>
+                  <p>Desenvolvedora anuncia título ambicioso com mecânicas inovadoras e gráficos de última geração.</p>
+                </div>
+              </div>
+              
+              <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1200x500/4E7CD9/ffffff?text=Atualizacao+Massiva');">
+                <div class="carousel-caption">
+                  <span class="badge bg-info mb-2">📢 ATUALIZAÇÃO</span>
+                  <h3>Grande atualização traz novo modo multiplayer</h3>
+                  <p>Patch 2.0 adiciona conteúdo esperado pelos fãs e corrige problemas técnicos do lançamento.</p>
+                </div>
+              </div>
+              
+              <div class="carousel-item" style="background-image: url('https://via.placeholder.com/1200x500/35F2DF/000000?text=Campeonato+Mundial');">
+                <div class="carousel-caption">
+                  <span class="badge bg-success mb-2">🏆 E-SPORTS</span>
+                  <h3>Campeonato mundial define os melhores times</h3>
+                  <p>Final épica reúne milhões de espectadores e premia equipes com valores recordes.</p>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
